@@ -163,6 +163,17 @@ const WebDesignAndDevelopmentContent = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
+
+                                        <div className='text-center px-3 py-3 d-flex flex-column gap-2'>
+                                            <div>
+                                                <Image src='/services/web_design_development/sitecore_logo_1.png' fluid alt='sitecore'></Image>
+                                            </div>
+                                            <div>
+                                            Sitecore
+                                            </div>
+                                        </div>
+                                    </div>
 
 
                                 </div>
