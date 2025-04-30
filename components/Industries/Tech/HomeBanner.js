@@ -27,35 +27,31 @@ function HeroBanner() {
   const metaImage = "";
 
   const backgroundImage = {
-    url: '/industrie/tech_banner.jpg'
+    url: '/industrie/tech-it.png'
   };
 
   const mobileBackgroundImage = {
-    url: '/industrie/mobile_industries_banner/tech_mob_banner.jpg'
+    url: '/industrie/tech-it.png'
   }
 
   const bannerHeading = 'TECH/IT'
 
   return (
     <>
-      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
-      <Container fluid className='bg-black p-0 position-relative z-3'>
-        <Container className="w-80 custom-container">
-          <Row className="d-flex align-items-center">
-            <Col className='d-flex flex-row flex-wrap align-items-center mb-3'>
-              <Link href="/performance/industries"
-                className='text-decoration-none '>
-                <h6 className='text-white mb-0 px-1'>Industries</h6>
-              </Link>
-              <CiCircleChevRight fill='white' />
-              <Link href=""
-                className='text-decoration-none px-1'>
-                <h6 className='text-decoration-none text-white mb-0'>Tech/IT</h6>
-              </Link>
-            </Col>
-            <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
-          </Row>
-        </Container>
+      <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+      {/* <ScrollAnimationIndustries /> */}
+
+      <Container fluid className="bg-black p-0 position-relative z-3">
+        <BannerAllPage
+          backgroundImage={backgroundImage}
+          bannerHeading={bannerHeading}
+          mobileBackgroundImage={mobileBackgroundImage}
+        />
       </Container>
     </>
   )

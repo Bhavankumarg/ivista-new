@@ -26,37 +26,32 @@ function HeroBanner() {
   const metaImage = "";
 
   const backgroundImage = {
-    url: '/industrie/Beauty_and_wellness_banner.jpg'
+    url: '/industrie/beauty-well.png'
   };
 
   const bannerHeading = 'BEAUTY & WELLNESS'
 
   const mobileBackgroundImage = {
-    url: '/industrie/mobile_industries_banner/beauty_and_wellness_mob_banner.jpg'
+    url: '/industrie/beauty-well.png'
   };
 
 
   return (
     <>
-      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+      <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+      {/* <ScrollAnimationIndustries /> */}
 
-      <Container fluid className='bg-black p-0 position-relative z-3'>
-        <Container className="w-80 custom-container">
-          <Row className="d-flex flex-column justify-content-start align-items-lg-center">
-          <Col className='d-flex flex-row flex-wrap align-items-center mb-3'>
-              <Link href="/performance/industries"
-                className='text-decoration-none '>
-                <h6 className='text-white mb-0 px-1'>Industries</h6>
-              </Link>
-              <CiCircleChevRight fill='white' />
-              <Link href=""
-                className='text-decoration-none px-1'>
-                <h6 className='text-decoration-none text-white mb-0'>Beauty & Wellness</h6>
-              </Link>
-            </Col>
-            <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
-          </Row>
-        </Container>
+      <Container fluid className="bg-black p-0 position-relative z-3">
+        <BannerAllPage
+          backgroundImage={backgroundImage}
+          bannerHeading={bannerHeading}
+          mobileBackgroundImage={mobileBackgroundImage}
+        />
       </Container>
 
 

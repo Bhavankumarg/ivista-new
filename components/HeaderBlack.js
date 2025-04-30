@@ -57,7 +57,7 @@ function Header1({ setChatVisible }) {
         `}
       </style>
 
-      <Container className="p-0 position-fixed z-index-100 bg-black m-0" fluid>
+      <Container className="p-0 position-fixed z-index-100 pt-lg-4  m-0 position-relative" fluid>
         <Container className="w-80">
           <nav className="navbar bg-color z-index-100">
             <div className="container-fluid">
@@ -97,7 +97,7 @@ function Header1({ setChatVisible }) {
                 aria-controls="offcanvasNavbar"
                 aria-label="Toggle navigation"
               >
-                <FaBars size={27} />
+                <FaBars size={27}/>
               </Button>
             </div>
           </nav>
