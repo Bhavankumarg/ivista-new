@@ -13,7 +13,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 
-function Header1({ setChatVisible }) {
+function HeaderBlackNew({ setChatVisible }) {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
   const timeoutRef = useRef(null);
@@ -57,7 +57,10 @@ function Header1({ setChatVisible }) {
         `}
       </style>
 
-      <Container className="p-0 position-fixed z-index-100 pt-lg-4  m-0 position-relative" fluid>
+      <Container
+        className="p-0 position-fixed z-index-100 pt-lg-4  m-0 position-relative"
+        fluid
+      >
         <Container className="w-80">
           <nav className="navbar bg-color z-index-100">
             <div className="container-fluid">
@@ -97,7 +100,7 @@ function Header1({ setChatVisible }) {
                 aria-controls="offcanvasNavbar"
                 aria-label="Toggle navigation"
               >
-                <FaBars size={27}/>
+                <FaBars size={27} />
               </Button>
             </div>
           </nav>
@@ -340,62 +343,59 @@ function Header1({ setChatVisible }) {
             <div className="d-flex flex-row justify-content-center align-items-center">
               <div>Follow Us:</div>
               <div className="d-flex align-items-center justify-content-start gap-1">
-              <Link
-                href="https://www.linkedin.com/company/ivistawebsolutions/mycompany/"
-                target="_blank"
-              >
-                <Image
-                  src="/images/linkerin_icon.svg"
-                  width={43}
-                  height={43}
-                  className="social"
-                  alt=""
-                />
-              </Link>
-              <Link
-                href="https://www.instagram.com/ivistazecomservices/"
-                target="_blank"
-              >
-                <Image
-                  src="/images/insta_icon.svg"
-                  width={44}
-                  height={44}
-                  className="social"
-                  alt=""
-                />
-              </Link>
-              <Link
-                href="https://www.facebook.com/people/IVistaz-Ecom-Services/61564957311627/"
-                target="_blank"
-              >
-                <Image
-                  src="/images/facebook_icon.svg"
-                  width={30}
-                  height={30}
-                  className="social"
-                  alt=""
-                />
-              </Link>
-              <Link
-                href="https://x.com/ivistazecom"
-                target="_blank"
-              >
-                <Image
-                  src="/images/x_icon.svg"
-                  width={44}
-                  height={44}
-                  className="social"
-                  alt=""
-                />
-              </Link>
+                <Link
+                  href="https://www.linkedin.com/company/ivistawebsolutions/mycompany/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/linkerin_icon.svg"
+                    width={43}
+                    height={43}
+                    className="social"
+                    alt=""
+                  />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/ivistazecomservices/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/insta_icon.svg"
+                    width={44}
+                    height={44}
+                    className="social"
+                    alt=""
+                  />
+                </Link>
+                <Link
+                  href="https://www.facebook.com/people/IVistaz-Ecom-Services/61564957311627/"
+                  target="_blank"
+                >
+                  <Image
+                    src="/images/facebook_icon.svg"
+                    width={30}
+                    height={30}
+                    className="social"
+                    alt=""
+                  />
+                </Link>
+                <Link href="https://x.com/ivistazecom" target="_blank">
+                  <Image
+                    src="/images/x_icon.svg"
+                    width={44}
+                    height={44}
+                    className="social"
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
           </Col>
         </Offcanvas>
       </Container>
-      {/* test */}
+
     </>
   );
 }
 
-export default Header1;
+export default HeaderBlackNew;
