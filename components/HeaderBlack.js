@@ -57,10 +57,16 @@ function HeaderBlackNew({ setChatVisible }) {
         `}
       </style>
 
-      <Container
+      {/* <Container
         className="p-0 position-fixed z-index-100 pt-lg-4 bg-white m-0 position-relative"
         fluid
-      >
+      > */}
+        <Container
+  className={`p-0 position-fixed z-index-100 ${
+    pathname === "/our-team" ? "bg-white" : ""
+  } m-0`}
+  fluid
+>
         <Container className="w-80">
           <nav className="navbar bg-color z-index-100">
             <div className="container-fluid">
