@@ -58,7 +58,7 @@ function HeaderBlackNew({ setChatVisible }) {
       </style>
 
       <Container
-        className="p-0 position-fixed z-index-100 pt-lg-4  m-0 position-relative"
+        className="p-0 position-fixed z-index-100 pt-lg-4 bg-white m-0 position-relative"
         fluid
       >
         <Container className="w-80">
